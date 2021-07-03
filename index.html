@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="author" content="jasonlai">
+  <title>BANet: Blur-aware Attention Networks for Dynamic Scene Deblurring</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <!--<meta property="og:image" content="http://gph.is/2oZQz8h" />-->
+</head>
+<body>
+
+  <div class="navbar-fixed">
+
+    <nav class="grey darken-4" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+        <ul class="left hide-on-med-and-down">
+          <li><a class="nav-item waves-effect waves-light" href="#home">Home</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#abstract">Abstract</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#paper">Paper</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#citation">Citation</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#download">Results</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#reference">References</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container scrollspy" id="home">
+
+        <h4 class="header center black-text">BANet: Blur-aware Attention Networks<br> for Dynamic Scene Deblurring</h4>
+
+      <br>
+
+      <div class="row center">
+        <h5 class="header col m4 s12">
+          <div class="author"><a href = "" target="blank">Fu-Jen Tsai*</a></div>
+          <div class="school"><a href="http://nthu-en.site.nthu.edu.tw/" target="blank">National Tsing Hua university</a></div>
+        </h5>
+
+        <h5 class="header col m4 s12">
+          <div class="author"><a href="https://www.cs.nccu.edu.tw/~ytpeng/" target="blank">Yan-Tsung Peng*</a></div>
+          <div class="school"><a href="https://www.nccu.edu.tw/app/home.php" target="blank">National Chi Nan University</a></div>
+        </h5>
+
+        <h5 class="header col m4 s12">
+          <div class="author"><a href="https://sites.google.com/site/yylinweb/" target="blank">Yen-Yu Lin</a></div>
+          <div class="school"><a href="https://www.nctu.edu.tw/en" target="blank">National Chiao Tung University</a></div>
+        </h5>
+        </div>
+      <div class="row center">
+        <h5 class="header col m4 s12">
+          <div class="author"><a href="https://www.linkedin.com/in/cctsai1/" target="blank">Chung-Chi Tsai</a></div>
+          <div class="school"><a href="https://www.qualcomm.com/" target="blank">Qualcomm Technologies, Inc.</a></div>
+        </h5>
+        <h5 class="header col m4 s12">
+          <div class="author"><a href="https://www.ee.nthu.edu.tw/cwlin/" target="blank">Chia-Wen Lin</a></div>
+          <div class="school"><a href="http://nthu-en.site.nthu.edu.tw/" target="blank">National Tsing Hua university</a></div>
+        </h5>
+
+        </div>
+</div>
+
+
+
+</a></div>
+        </h5>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row center">
+        <div class="col l12 m12 s12">
+          <img class="responsive-img" src="img/architecture.png" width="90%">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row section scrollspy" id="abstract">
+      <div class="title">Abstract</div>
+      <br>
+      <p align="justify">Image motion blur usually results from moving objects or camera shakes. Such blur is generally directional and non-uniform. Previous research efforts attempt to solve non-uniform blur by using self-recurrent multi-scale or multi-patch architectures accompanying with self-attention. However, using self-recurrent frameworks typically leads to a longer inference time, while inter-pixel or inter-channel self-attention may cause excessive memory usage. This paper proposes blur-aware attention networks (BANet) which accomplish accurate and efficient deblurring via a single forward pass. Our BANet utilizes region-based self-attention with multi-kernel strip pooling to disentangle blur patterns of different magnitudes and orientations and with cascaded parallel dilated convolution to aggregate multi-scale content features. Extensive experimental results on the GoPro and HIDE benchmarks demonstrate that the proposed BANet performs favorably against the state-of-the-arts in blurred image restoration and can provide deblurred results in real-time.
+</p>
+    </div>
+
+    <div class="row section scrollspy" id="paper">
+      <div class="title">Papers</div>
+      <br>
+      <div class="row">
+
+        <div class="col m2 s6 center">
+          <a href="https://arxiv.org/pdf/2101.07518.pdf" target="">
+            <img src="img/icon_pdf.png" width="60%">
+          </a>
+          <br>
+          <a href="https://arxiv.org/pdf/2101.07518.pdf" target=""><br></a>
+        </div>
+
+    </div>
+
+    <div class="row section scrollspy" id="citation">
+      <div class="title">Citation</div>
+      <p>Fu-Jen Tsai*, Yan-Tsung Peng*, Yen-Yu Lin, Chung-Chi Tsai, and Chia-Wen, "BANet: Blur-aware Attention Networks
+for Dynamic Scene Deblurring", arXiv preprint arXiv:2101.07518, 2021.</p>
+
+      <br>
+
+      <div class="title">BibTex</div>
+      <pre>
+@inproceedings{BANet,
+  author    = {Tsai, Fu-Jen* and Peng, Yan-Tsung* and Lin, Yen-Yu and Tsai, Chung-Chi and  Lin, Chia-Wen},
+  title     = {BANet: Blur-aware Attention Networks for Dynamic Scene Deblurring},
+  booktitle = {arXiv preprint arXiv:2101.07518},
+  year      = {2021}
+}
+      </pre>
+
+    </div>
+
+    <div class="section row scrollspy" id="download">
+      <div class="title">Code and Results</div>
+      <br>
+      <div class="row">
+
+        <div class="col m6 s12 center">
+          <a href="" target="">
+            <img src="img/github.png">
+          </a>
+          <br>
+          <a href="" target="">Code<br>(coming soon)</a>
+        </div>
+
+        <div class="col m6 s12 center">
+          <a href="" target="">
+            <img src="img/icon_zip.png">
+          </a>
+          <br>
+          <a href="" >Results<br>(coming soon)</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row section scrollspy" id="reference">
+      <div class="title">References</div>
+      <ul>
+        <li>&bull;
+          Nah et al. <a href="https://openaccess.thecvf.com/content_cvpr_2017/papers/Nah_Deep_Multi-Scale_Convolutional_CVPR_2017_paper.pdf" target="blank">Deep Multi-scale Convolutional Neural Network for Dynamic Scene Deblurring.</a> In CVPR, 2017.
+        </li>
+
+        </li>&bull;
+          Tao et al. <a href="https://openaccess.thecvf.com/content_cvpr_2018/CameraReady/1156.pdf" target="blank">Scale-recurrent network for deep image deblurring.</a> In CVPR, 2018.
+        </li>
+
+        <li>&bull;
+          Gao et al. <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Gao_Dynamic_Scene_Deblurring_With_Parameter_Selective_Sharing_and_Nested_Skip_CVPR_2019_paper.pdf" target="blank">Dynamic Scene Deblurring with Parameter Selective Sharing and Nested Skip Connections.</a> In CVPR, 2019.
+        </li>
+
+        </li>&bull;
+          Kupyn et al. <a href="https://arxiv.org/pdf/1908.03826.pdf" target="blank">Dynamic Scene Deblurring with Parameter Selective Sharing and Nested Skip Connections.</a> In ICCV, 2019.
+        </li>
+
+        <li>&bull;
+          Zhang et al. <a href="https://openaccess.thecvf.com/content_cvpr_2017/papers/Nah_Deep_Multi-Scale_Convolutional_CVPR_2017_paper.pdf" target="blank">Deep Multi-scale Convolutional Neural Network for Dynamic Scene Deblurring.</a> In CVPR, 2019.
+        </li>
+
+        <li>&bull;
+          Hou et al. <a href="https://arxiv.org/pdf/2003.13328.pdf" target="blank">Strip Pooling: Rethinking Spatial Pooling for Scene Parsing.</a> In CVPR, 2019.
+        </li>
+
+        <li>&bull;
+          Park et al. <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123510324.pdf" target="blank">Multi-Temporal Recurrent Neural Networks For Progressive Non-Uniform Single Image Deblurring With Incremental Temporal Training.</a> In ECCV, 2020.
+        </li>
+
+        <li>&bull;
+          Purohit et al. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/6862" target="blank">Region-Adaptive Dense Network for Efficient Motion Deblurring.</a> In AAAI, 2020.
+        </li>
+
+        <li>&bull;
+          Suin et al. <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Suin_Spatially-Attentive_Patch-Hierarchical_Network_for_Adaptive_Motion_Deblurring_CVPR_2020_paper.pdf" target="blank">Spatially-Attentive Patch-Hierarchical Network for Adaptive Motion Deblurring.</a> In CVPR, 2021.
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
+
